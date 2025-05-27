@@ -208,9 +208,17 @@
 //   case "/":
 //     console.log(a / b);
 //     break;
-// };
-for (let i = 1; i <= 5; i++) {
-  for (let j = i; j <= 0; j++) {
-    console.log("*");
-  }
+// // };
+// for (let i = 1; i <= 5; i++) {
+//   for (let j = 5; j > i; j--) {
+//     console.log("*");
+//   }
+// }
+// console.log("HELLO WORLD");
+function sum(a, b) {
+  let c = a + b;
+  console.log("the sum of two numbers is", c);
 }
+sum(10, 20);
+sum(-5, 6);
+sum(1000, -646);
