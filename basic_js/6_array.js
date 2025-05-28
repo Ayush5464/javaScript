@@ -21,5 +21,9 @@ let vegitable = ["tommato", "bringle", "coliflawer", "cabage"];
 // fruits.push(vegitable);
 // let a = fruits.concat(vegitable);
 // console.log(a);
-let food = [...fruits, ...vegitable]; //... the triple dots is a spread method to add the two arrays
-console.log(food);
+// let food = [...fruits, ...vegitable]; //... the triple dots is a spread method to add the two arrays
+// console.log(food);
+
+console.log(Array.isArray("Ayush"));
+console.log(Array.from("Ayush")); // it convert a any thing into an array
+console.log(Array.from({name: "Ayush"})) // important (for this we have to gave the instructions to which one we want to convert to array its is kye or name) 
