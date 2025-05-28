@@ -37,10 +37,10 @@ let guess = prompt("Enter the number of your choice");
 let number = 10;
 while (guess != number) {
   if (guess < number) {
-    console.log("Too low");
+    alert("Too low");
   } else {
     alert("too high");
   }
-  guess = prompt(" try number of your choice");
+  guess = prompt(" try again  enter number of your choice");
 }
-console.log("you got the number");
+alert("you got the number");
