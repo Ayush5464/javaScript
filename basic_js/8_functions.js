@@ -19,4 +19,55 @@ function addition(a, b) {
 function calculatePrice(...num1) {
   return num1;
 }
-console.log(calculatePrice(200, 100, 200));
+// console.log(calculatePrice(200, 100, 200));
+
+// const user = {
+//   name: "ayush",
+//   age: 21,
+
+//   massage: function () {
+//     console.log(`welcome to mySite`);
+//   },
+// };
+
+// user.massage();
+
+// this key word
+
+// const user = {
+//   name: "ayush",
+//   age: 21,
+
+//   massage: function () {
+//     console.log(`${this.name} , welcome to mySite`);
+//     console.log(this);
+//   },
+// };
+
+// user.massage();
+// user.name = "nikhil";
+// user.massage();
+
+//arrow Functions
+
+// const add = (num1, num2) => {
+//   return num1 + num2;
+// };
+// const add = (num1, num2) => num1 + num2; //implecit method
+// const add = (num1, num2) => (num1 + num2);
+// const add = (num1, num2) => ({
+//   username: "ayush"
+// });
+
+// console.log(add(10, 20));
+
+//IIFE
+// const user = ((name) => { // named iife
+//   console.log(`hello ${name}`);
+// })("ayush")
+
+// let a = [1, 2, 3];
+// let b = a;
+// b.push(4);
+// console.log(a);
+
