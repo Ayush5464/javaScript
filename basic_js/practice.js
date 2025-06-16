@@ -144,3 +144,22 @@ const userData = [
 //   userage: data.age,
 // }));
 // console.log(`fullname ${newData.fullname}, age ${newData.userage}`);
+
+// let student = {
+//   name: "aman",
+//   age: 21,
+//   rollNo: 2021,
+// };
+
+// for (let key in student) {
+//   console.log(key + ": " + student[key]);
+// }
+
+let student = {
+  name: "aman",
+  age: 21,
+  rollNo: 2021,
+};
+Object.entries(student).forEach(function ([key, value]) {
+  console.log(key + ":" + value);
+});

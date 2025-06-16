@@ -61,3 +61,24 @@ const course = {
 };
 // const { Teacher: me } = course; // this is a destucturing
 // console.log(me);
+// course.Duration = "6 month";
+// console.log(course.Duration);
+
+// const { corursename, fees, Teacher } = course; // this is a destucturing
+// console.log(corursename, fees, Teacher);
+
+let student = {
+  name: "ayush",
+  sclass: "VI",
+  rollno: 12,
+};
+console.log(Object.keys(student));
+console.log(student.name);
+console.log(student.sclass);
+console.log(student.rollno);
+console.log(student);
+
+delete student.rollno;
+console.log(student);
+
+console.log(student.name.length);
