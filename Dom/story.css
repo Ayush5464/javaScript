@@ -1,0 +1,50 @@
+body {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 450px;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid black;
+  overflow: hidden;
+  position: relative;
+}
+.stories {
+  height: 100px;
+  width: 100%;
+  border-bottom: 1px solid #6666;
+  padding: 15px;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.stories::-webkit-scrollbar {
+  display: none;
+}
+.story {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 2px solid red;
+  display: inline-block;
+  overflow: hidden;
+  margin-right: 5px;
+}
+.story img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.fullScreen {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  display: none;
+}

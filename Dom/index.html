@@ -4,14 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="bulb"></div>
+    <div id="main">
+      <!-- <div id="bulb"></div>
     <button id="click">On</button>
     <h1>hii</h1>
     <h1>hello</h1>
-    <h1>namaste</h1>
-    <script src="index.js"></script>
+    <h1>namaste</h1> -->
+<!-- 
+      <div id="card">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt=""
+        />
+        <h1>Shruti Raj</h1>
+        <h4>Stranger</h4>
+        <div id="btn-container">
+          <button id="remove">Remove</button>
+          <button id="add">Add Friend</button>
+        </div>
+      </div>
+      <div class="container">
+        <img
+          src="https://images.unsplash.com/photo-1557053910-d9eadeed1c58?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+        <i class="ri-heart-3-fill"></i>
+      </div>
+      <div class="section">
+        <i class="ri-heart-3-line" id="like"></i>
+        <i class="ri-chat-4-line" id="comment"></i>
+        <i class="ri-share-forward-line" id="share"></i>
+      </div>
+      <div class="cursour"><i class="ri-tent-fill"></i></div>
+    </div>
+    <script src="index.js"></script> -->
   </body>
 </html>

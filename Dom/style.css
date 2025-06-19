@@ -1,4 +1,4 @@
-#bulb {
+/* /* #bulb {
   height: 200px;
   width: 200px;
   border-radius: 50%;
@@ -10,4 +10,105 @@ button {
   padding: 20px 20px;
   font-size: 20px;
   margin: 60px;
+} */
+/*body {
+   display: flex;
+  align-items: center;
+  justify-content: center; 
+  background-color: cadetblue;
 }
+#card {
+  height: 300px;
+  width: 300px;
+  background-color: #555;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+#card img {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+#card h1 {
+  color: #fff;
+  font-size: 24px;
+  margin: 10px 0;
+}
+#card h4 {
+  color: rgb(169, 235, 247);
+  font-size: 24px;
+  margin: 10px 0;
+}
+#btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+#btn-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+}
+#btn-container #remove {
+  display: none;
+  background-color: lightgray;
+  color: black;
+}
+
+.container {
+  height: 400px;
+  width: 200px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: #fff;
+}
+.container img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  position: relative;
+}
+.container i {
+  position: absolute;
+  color: #fff;
+  top: 580px;
+  left: 130px;
+  font-size: 70px;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+  /* display: none; */
+  transition: transform ease 0.2s;
+}
+.section {
+  padding: 1px 10px;
+  width: 185px;
+  margin-left: 20px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+.section i {
+  margin-left: 10px;
+  font-size: 25px;
+  color: gray;
+}
+.cursour {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  font-size: 30px;
+  color: red;
+  mix-blend-mode: difference;
+  position: absolute;
+  transition: all linear 0.2;
+} */
