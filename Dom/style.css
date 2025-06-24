@@ -1,4 +1,4 @@
-/* /* #bulb {
+/* #bulb {
   height: 200px;
   width: 200px;
   border-radius: 50%;
@@ -11,10 +11,10 @@ button {
   font-size: 20px;
   margin: 60px;
 } */
-/*body {
-   display: flex;
+body {
+  display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   background-color: cadetblue;
 }
 #card {
@@ -66,8 +66,11 @@ button {
   height: 400px;
   width: 200px;
   border-radius: 10px;
-  margin-top: 20px;
-  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
   background-color: #fff;
 }
 .container img {
@@ -77,15 +80,14 @@ button {
   object-fit: cover;
   position: relative;
 }
-.container i {
+#heart {
   position: absolute;
   color: #fff;
   top: 580px;
-  left: 130px;
+  text-align: center;
   font-size: 70px;
   opacity: 0;
   transform: translate(-50%, -50%) scale(0);
-  /* display: none; */
   transition: transform ease 0.2s;
 }
 .section {
@@ -102,7 +104,7 @@ button {
   font-size: 25px;
   color: gray;
 }
-.cursour {
+/* .cursour {
   height: 20px;
   width: 20px;
   border-radius: 50%;
