@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .contextlist {
+        position: absolute;
+        /* display: none; */
+        background-color: gray;
+        height: 135px;
+        width: 120px;
+        margin: 20px;
+      }
+      .items {
+        list-style: none;
+        color: white;
+        /* padding: 10px; */
+      }
+      .list {
+        text-align: left;
+        margin: 5px;
+        font-size: medium;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .menu {
+        width: 100%;
+        height: 100vh;
+        background-color: aqua;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu"></div>
+    <div class="contextlist">
+      <ul class="items">
+        <li class="list">Search</li>
+        <li class="list">Delete</li>
+        <li class="list">Copy</li>
+        <li class="list">Paste</li>
+        <li class="list">Cut</li>
+      </ul>
+    </div>
+    <script>
+      let contextlist = document.querySelector(".contextlist");
+      let item = document.querySelector(".items");
+      let menu = document.querySelector(".menu");
+
+      menu.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+        contextlist.style.left = e.pageX + "px";
+        contextlist.style.top = e.pageY + "px";
+        contextlist.style.disply = "block";
+      });
+      document.addEventListener("click", function () {
+        contextlist.style.disply = "block";
+      });
+    </script>
+  </body>
+</html>

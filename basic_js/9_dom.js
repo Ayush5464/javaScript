@@ -25,7 +25,7 @@ let startColourChange = function () {
   function backgroundColor() {
     document.body.style.backgroundColor = changeColour();
   }
-  interval = setInterval(backgroundColor, 2000);
+  interval = setInterval(backgroundColor, 1000);
 };
 let stopColourChange = function () {
   clearInterval(interval);

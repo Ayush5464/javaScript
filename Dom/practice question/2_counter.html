@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="count">click me</button>
+    <p id="number"></p>
+  </body>
+  <script>
+    let btn = document.querySelector("#count");
+    let number = document.querySelector("#number");
+    let count = 0;
+    btn.addEventListener("click", function () {
+      count++;
+      number.innerHTML = "you clicked " + count + " times";
+      if (count >= 10) {
+        count = 0;
+        number.innerHTML = "you clicked " + count + " times";
+      }
+    });
+  </script>
+</html>

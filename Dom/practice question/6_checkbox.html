@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="checkbox" value="apple" class="color" />red<br />
+    <input type="checkbox" value="banana" class="color" /> pink<br />
+    <input type="checkbox" value="kiwi" class="color" />orange<br />
+    <input type="checkbox" value="coconut" class="color" />blue<br />
+    <input type="checkbox" value="orange" class="color" />black <br />
+    <p id="data"></p>
+    <script>
+      let checkbox = document.querySelectorAll(".color");
+      let data = document.querySelector("#data");
+
+      checkbox.forEach((item) => {
+        item.addEventListener("change", userchecked);
+      });
+
+      function userchecked() {
+        const checkdata = document.querySelectorAll(".color:checked").length;
+        data.textContent = checkdata;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Ctr + Enter for output</h2>
+    <label for="">name</label>
+    <input type="text" name="" id="text" placeholder="enter your name" />
+    <p>your name : <span id="output"></span></p>
+  </body>
+  <script>
+    let text = document.querySelector("#text");
+    let output = document.querySelector("#output");
+
+    text.addEventListener("keydown", function (e) {
+      if (e.ctrlKey && e.key == "Enter") {
+        output.textContent = text.value;
+      }
+    });
+  </script>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .nav {
+        width: 100%;
+        height: 50px;
+        background-color: rgb(82, 97, 131);
+        display: flex;
+        align-items: center;
+        color: #ffff;
+        position: fixed;
+      }
+      .navbar {
+        list-style: none;
+        padding: 50px;
+      }
+      .lists {
+        display: inline-block;
+        margin-right: 20px;
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        min-height: 500vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul class="navbar">
+        <li class="lists">home</li>
+        <li class="lists">services</li>
+        <li class="lists">about</li>
+        <li class="lists">contact us</li>
+      </ul>
+    </div>
+    <div class="container"></div>
+
+    <script>
+      let nav = document.querySelector(".nav");
+
+      document.addEventListener("scroll", function () {
+        if (
+          window.pageYOffset > 500 ||
+          document.documentElement.scrollTop > 500
+        ) {
+          nav.style.backgroundColor = "orange";
+        } else if (
+          document.body.scrollTop < 100 ||
+          document.documentElement.scrollTop < 100
+        ) {
+          nav.style.backgroundColor = "rgb(82, 97, 131)";
+        }
+      });
+    </script>
+  </body>
+</html>

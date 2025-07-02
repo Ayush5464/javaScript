@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .container {
+        width: 300px;
+        height: 500px;
+        background-color: rgb(156, 151, 151);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .image {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      .heart_icon {
+        position: absolute;
+        font-size: 90px;
+        top: 200px;
+        color: rgba(255, 0, 0, 0.897);
+        opacity: 0.9;
+        transform: scale(0);
+        transition: transform ease 0.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image">
+        <img
+          src="https://images.unsplash.com/photo-1524638431109-93d95c968f03?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGZlbWFsZXxlbnwwfHwwfHx8MA%3D%3D"
+          alt=""
+        />
+        <div class="heart_icon">
+          <i class="ri-heart-3-fill"></i>
+        </div>
+      </div>
+    </div>
+    <script>
+      let icon = document.querySelector(".heart_icon");
+      let image = document.querySelector(".image");
+      flag = 0;
+      if (flag == 0) {
+        image.addEventListener("dblclick", function () {
+          icon.style.transform = "scale(1)";
+          setTimeout(function () {
+            icon.style.transform = "scale(0)";
+          }, 1000);
+        });
+        flag = 1;
+      } else {
+        flag = 0;
+      }
+    </script>
+  </body>
+</html>

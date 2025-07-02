@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="userInput" placeholder="search" />
+    <ul id="list">
+      <li>apple</li>
+      <li>banana</li>
+      <li>mango</li>
+      <li>pineapple</li>
+      <li>kiwi</li>
+    </ul>
+    <script>
+      const userInput = document.getElementById("userInput");
+      const list = document.getElementById("list");
+      const item = list.getElementsByTagName("li");
+      userInput.addEventListener("input", function () {
+        const filter = userInput.value;
+        for (let i = 0; i < item.length; i++) {
+          const text = item[i].textContent;
+          if (text.includes(filter)) {
+            item[i].style.display = "";
+          } else {
+            item[i].style.display = "none";
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

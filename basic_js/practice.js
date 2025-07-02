@@ -1,3 +1,5 @@
+const { Promise } = require("mongoose");
+
 const userData = [
   {
     id: 1,
@@ -155,11 +157,18 @@ const userData = [
 //   console.log(key + ": " + student[key]);
 // }
 
-let student = {
-  name: "aman",
-  age: 21,
-  rollNo: 2021,
-};
-Object.entries(student).forEach(function ([key, value]) {
-  console.log(key + ":" + value);
+// let student = {
+//   name: "aman",
+//   age: 21,
+//   rollNo: 2021,
+// };
+// Object.entries(student).forEach(function ([key, value]) {
+//   console.log(key + ":" + value);
+// });
+
+// -----------------------Promise-----------------------
+
+let ans = new Promise((res, rej) => {
+  console.log("resolve");
+  return res;
 });

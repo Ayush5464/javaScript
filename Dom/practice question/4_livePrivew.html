@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="userName">UserName :</label>
+      <input
+        type="text"
+        id="userName"
+        placeholder="Enter your name"
+        required
+      /><br />
+      <label for="userName">Email :</label>
+      <input type="email" id="Email" placeholder="Enter your Email" /><br />
+      <label for="userName">PhoneNo. :</label>
+      <input type="number" id="phoneNo" placeholder="Enter your PhoneNo" />
+    </form>
+    <p id="data1"></p>
+    <p id="data2"></p>
+    <p id="data3"></p>
+    <script>
+      let username = document.querySelector("#userName");
+      let email = document.querySelector("#Email");
+      let phoneno = document.querySelector("#phoneNo");
+      let data4 = document.querySelector("#data1");
+      let data2 = document.querySelector("#data2");
+      let data3 = document.querySelector("#data3");
+
+      username.addEventListener("input", function () {
+        data1.textContent = username.value;
+      });
+      email.addEventListener("input", function () {
+        data2.textContent = email.value;
+      });
+      phoneno.addEventListener("input", function () {
+        data3.textContent = phoneno.value;
+      });
+    </script>
+  </body>
+</html>

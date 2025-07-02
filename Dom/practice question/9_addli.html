@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul class="list">
+      <li>apple</li>
+      <li>mango</li>
+      <li>banana</li>
+    </ul>
+  </body>
+  <script>
+    let list = document.querySelector(".list");
+    let items = document.getElementsByTagName("li");
+
+    list.addEventListener("click", function () {
+        
+      let newli = document.createElement("li");
+      newli.textContent = "orange";
+
+      list.appendChild(newli);
+    });
+  </script>
+</html>

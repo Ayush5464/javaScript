@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="countdown">
+      <h2>Type anything</h2>
+      <input type="text" id="text" placeholder="text" maxlength="99" />
+      <p id="show">remaining lettrer count :</p>
+    </div>
+  </body>
+  <script>
+    let text = document.querySelector("#text");
+    let show = document.querySelector("#show");
+
+    text.addEventListener("keydown", function () {
+      let length = 99;
+      let remain = length - text.value.length;
+
+      show.textContent = "remaining lettrer count : " + remain;
+    });
+  </script>
+</html>

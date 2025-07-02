@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul class="list">
+      <li>html</li>
+      <li>css</li>
+      <li>js</li>
+    </ul>
+    <button id="add">Add new</button>
+    <button id="del">delete</button>
+    <script>
+      let list = document.querySelector(".list");
+      let add = document.querySelector("#add");
+      let del = document.querySelector("#del");
+      add.addEventListener("click", function () {
+        let item = prompt("enter the new language");
+        if (item) {
+          let li = document.createElement("li");
+          li.textContent = item;
+          list.appendChild(li);
+        }
+      });
+      del.addEventListener("click", function () {
+        let delitem = prompt("enter the language you want to delet");
+        if (delitem) {
+          let liitem = document.getElementsByTagName("li");
+          for (i = 0; i < liitem.length; i++) {
+            if (liitem[i].textContent == delitem) {
+              list.removeChild(liitem[i]);
+            }
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
