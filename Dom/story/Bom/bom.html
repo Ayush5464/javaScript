@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="openwindow">openwindow</button>
+    <button id="closewindow">closewindow</button>
+    <button id="reloadbtn">reloadbtn</button>
+    <button id="replace">replace</button>
+    <button id="browserinfo">browserinfo</button>
+    <button id="screeninfo">screeninfo</button>
+    <button id="procced">procced</button>
+    <button id="urlinfo">urlinfo</button>
+
+    <script>
+      let openwindow = document.querySelector("#openwindow");
+      let closewindow = document.querySelector("#closewindow");
+      let reloadbtn = document.querySelector("#reloadbtn");
+      let replace = document.querySelector("#replace");
+      let browserinfo = document.querySelector("#browserinfo");
+      let screeninfo = document.querySelector("#screeninfo");
+      let procced = document.querySelector("#procced");
+      let urlinfo = document.querySelector("#urlinfo");
+
+      openwindow.addEventListener("click", function () {
+        window.open("https://www.google.com", "width=600", "height=500");
+      });
+
+      closewindow.addEventListener("click", function () {
+        window.close();
+      });
+
+      reloadbtn.addEventListener("click", function () {
+        location.reload();
+      });
+
+      replace.addEventListener("click", function () {
+        // location.replace("https://flipkart.com");
+        location.assign("https://flipkart.com");
+      });
+
+      browserinfo.addEventListener("click", function () {
+        let browserinfo = `browser agent ${navigator.userAgent} \n browser name${navigator.appName} \n browser version ${navigator.language} \n browser platform ${navigator.platform}`;
+        alert(browserinfo);
+      });
+
+      screeninfo.addEventListener("click", function () {
+        let screeninfo = `height ${screen.height} width ${screen.width} color depth ${screen.colorDepth}`;
+        alert(screeninfo);
+      });
+      procced.addEventListener("click", function () {
+        let procced = confirm(" you want to procced");
+        if (procced) {
+          alert("you clicked yes");
+        } else {
+          alert("you clicked cencled");
+        }
+      });
+      urlinfo.addEventListener("click", function () {
+        let urlinfo = `port ${location.port} \n host ${location.host}\n protocol ${location.protocol}\n hostname ${location.hostname} \n path name${location.pathname} \n href ${location.href}`;
+        alert(urlinfo);
+      });
+
+      name= 
+    </script>
+  </body>
+</html>

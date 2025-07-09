@@ -191,3 +191,4 @@ function Adder(x) {
 }
 const addFive = Adder(5);
 console.log(addFive(10)); // OUTPUT: 15
+

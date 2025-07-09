@@ -110,11 +110,11 @@
 //   alert("the sign is -");
 // }
 // let a;
-// a = prompt(alert("enter a year"));
-// if ((a % 4 == 0  && a%100!=0 )|| a%400==0) {
-//   alert("this is a leep year", a);
+// a = 2005;
+// if ((a % 4 == 0 && a % 100 != 0) || a % 400 == 0) {
+//   console.log("this is a leep year", a);
 // } else {
-//   alert("this is not a leep year", a);
+//   console.log("this is not leep year", a);
 // }
 // let a;
 // a = prompt("enter a marks");
@@ -215,10 +215,12 @@
 //   }
 // }
 // console.log("HELLO WORLD");
-function sum(a, b) {
-  let c = a + b;
-  console.log("the sum of two numbers is", c);
-}
-sum(10, 20);
-sum(-5, 6);
-sum(1000, -646);
+// function sum(a, b) {
+//   let c = a + b;
+//   console.log("the sum of two numbers is", c);
+// }
+// sum(10, 20);
+// sum(-5, 6);
+// sum(1000, -646);
+
+
