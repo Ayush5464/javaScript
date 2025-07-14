@@ -77,3 +77,57 @@
 //   console.error(error);
 // }
 
+let arr = [12, 8, 35, 4, 7, 15, 26, 2, 90, 27];
+
+let result = arr.filter((value) => {
+  return value % 2 == 0;
+});
+
+// console.log(result);
+
+let team = [
+  { name: "bob", position: "developer" },
+  { name: "jon", position: "hr" },
+  { name: "alice", position: "manager" },
+  { name: "joe", position: "developer" },
+];
+
+let Post = team.filter((value) => {
+  return value.position == "developer";
+});
+
+console.log(Post);
+
+const users = [
+  { name: "Alice", age: 24 },
+  { name: "Bob", age: 27 },
+  { name: "Charlie", age: 22 },
+  { name: "Dave", age: 30 },
+];
+
+let data = users.filter((value) => {
+  return value.age >= 25;
+});
+
+console.log(data);
+
+const books = [
+  { title: "Book One", author: { name: "Author A" } },
+  { title: "Book Two", author: { name: "Author B" } },
+  { title: "Book Three", author: { name: "Author A" } },
+  { title: "Book Four", author: { name: "Author C" } },
+];
+
+let [
+  { title: title1, author: author1 },
+  { title: title2, author: author2 },
+  { title: title3, author: author3 },
+  { title: title4, author: author4 },
+] = books;
+
+console.log(title1, author1);
+
+let res = books.filter((value) => {
+  return value.author.name == "Author A";
+});
+console.log(res);
